@@ -6,6 +6,8 @@ class EmployeeController < ApplicationController
     @employees = Employee.all
   end
 
+  private
+  
   def all_tables
     (ActiveRecord::Base.connection.tables - ['schema_migrations']).each do |table|
       table
