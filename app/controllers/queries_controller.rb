@@ -1,4 +1,4 @@
-class EmployeeController < ApplicationController
+class QueriesController < ApplicationController
 
   helper_method :all_tables
 
@@ -7,7 +7,7 @@ class EmployeeController < ApplicationController
   end
 
   private
-  
+
   def all_tables
     (ActiveRecord::Base.connection.tables - ['schema_migrations']).each do |table|
       table
