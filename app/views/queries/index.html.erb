@@ -1,16 +1,22 @@
 <h1>Hello World</h1>
 
-<div class="tables">
-  <% all_tables.each do |table| %>
-    <h1> <%= table %> </h1>
-    <% table.singularize.camelize.constantize.column_names.each do |column| %>
-      <p> <%= column %> </p>
-    <% end %>
-  <% end %>
-</div>
+<div class="row">
+  <div class="col-md-9">
+    <div class="tables">
+      <% all_tables.each do |table| %>
+        <h1> <%= table %> </h1>
+        <% table.singularize.camelize.constantize.column_names.each do |column| %>
+          <p> <%= column %> </p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 
-<div class="calculator">
-  <p>
-    Hello!  I'm the calculator.
-  </p>
+  <div class="col-md-3">
+    <div class="calculator">
+      <p>
+        Hello!  I'm the calculator.
+      </p>
+    </div>
+  </div>
 </div>
