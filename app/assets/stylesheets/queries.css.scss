@@ -6,11 +6,7 @@
 // begin styling for calculator
 
 .calculator {
-
-  height: 300px;
-  padding-right: 20px;
-  margin: 20px;
+  height: 400px;
   background-color: pink;
-  border-color: black;
-  border-radius: 10px;
+  // border: 2px black; <-- this needs to be both on "well" AND on "calculator"
 }
