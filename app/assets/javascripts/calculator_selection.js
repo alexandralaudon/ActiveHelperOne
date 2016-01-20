@@ -7,6 +7,6 @@ $(document).ready(function() {
     console.log("Clicked on a column name: " + columnName);
     console.log(tableName);
     console.log("Closest table name: " + tableName);
-    
+    $(".well").append("<p>" + tableName + " " + columnName + "</p>");
   });
 });
